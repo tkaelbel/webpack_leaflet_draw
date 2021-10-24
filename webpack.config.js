@@ -1,5 +1,4 @@
 const path = require("path");
-// const loader = require("css-loader")
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -11,7 +10,7 @@ module.exports = {
   mode: "development",
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Output Management",
+      title: "webpack leaflet trial",
     }),
   ],
   module: {
@@ -22,16 +21,8 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+        // had problems with the icons. This option made it work!!
         type: "asset/resource",
-        // use: {
-        //   loader: "file-loader",
-        //   options: {
-        //     //https://github.com/webpack-contrib/file-loader#publicpath
-        //     publicPath: "dist/images/",
-        //     outputPath: "images",
-        //     name: "[name].[ext]",
-        //   },
-        // }
       },
       {
         test: /\.js$/,
