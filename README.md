@@ -1,7 +1,7 @@
 # webpack_leaflet_draw
  Just a test to get webpack going with leaflet and leaflet-draw. I had the problem that the icons from leaflet-draw weren't bundled by webpack. The option *`type: "asset/resource"`* for icons made it work. 
 
-![image-20211024174410326](.\image-20211024174119082.png)
+![image-20211024174410326](.\image-20211024174119082.png?raw=true)
 
 ## Try it out
 
